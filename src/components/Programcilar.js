@@ -39,9 +39,14 @@ export default function Programcilar() {
     // Closureların güzelliği, argümanlar yoluyla bilgi enjekte etmeye gerek kalmadan programın
     // bu bölgesinden her iki state dilimini de "görebilmemiz"dir.
 
-    return programciListesi[programciId-1].isim
+  // return programciListesi[programciId-1].isim
 
+    if (programciId){
+      const obj = programciListesi.find((dev)=> dev.id === programciId);
+     return  obj.isim;
+    }
 
+  
   };
 
   const stil = {

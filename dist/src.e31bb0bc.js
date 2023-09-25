@@ -29376,7 +29376,14 @@ function Programcilar() {
     // Closureların güzelliği, argümanlar yoluyla bilgi enjekte etmeye gerek kalmadan programın
     // bu bölgesinden her iki state dilimini de "görebilmemiz"dir.
 
-    return programciListesi[programciId - 1].isim;
+    // return programciListesi[programciId-1].isim
+
+    if (programciId) {
+      var obj = programciListesi.find(function (dev) {
+        return dev.id === programciId;
+      });
+      return obj.isim;
+    }
   };
   var stil = {
     fontSize: "1.5em",
