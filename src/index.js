@@ -9,6 +9,7 @@ import Kareler from './components/Kareler';
 import Programcilar from './components/Programcilar';
 
 
+
 const container = document.getElementById("root");
 const root = createRoot(container)
 root.render(<>
