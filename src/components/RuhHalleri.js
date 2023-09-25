@@ -57,7 +57,7 @@ export default function RuhHalleri() {
   return (
     <div className='widget-moods container'>
       <h2>RuhHalleri</h2>
-	<div id='ruhHali' style={stil}>'Nasıl hissettiğimi bilmiyorum :-|'</div> {ruhHali}
+	<div id='ruhHali' style={stil}>{ruhHali}</div> 
       <div>
         <button id='mutluEt' onClick={mutluEt}>Mutlu Et</button>
         <button id='uz' onClick={uZ}>Üz</button>
